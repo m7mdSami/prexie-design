@@ -1,0 +1,48 @@
+body {
+    background-color: #F5F5F5;
+    .step {
+        .step-trigger {
+            position: relative;
+            .bs-stepper-circle {
+                background-color: transparent;
+                width: 3em;
+                height: 3em;
+                line-height: 1.5em;
+                border-radius: 2em;
+            }
+            .bs-stepper-label {
+                position: absolute;
+                bottom: -30px;
+            }
+        }
+        &.active {
+            .bs-stepper-circle {
+                border-color: var(--bs-teal) !important;
+            }
+            .bs-stepper-label {
+                color: var(--bs-teal) !important;
+            }
+            + .line {
+                background-color: var(--bs-teal);
+            }
+        }
+    }
+    
+    .form-switch {
+        .form-check-input {
+            height: 1.5em;
+            width: 3em;
+        }
+    }
+    .modal-dialog-date {
+        margin-left: 100px;
+        .form-label {
+            font-size: 13px;
+        }
+    }
+    .input-icon {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+    }
+}
